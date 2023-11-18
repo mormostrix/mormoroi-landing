@@ -1,0 +1,74 @@
+/* atkinson-hyperlegible-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
+}
+
+/* atkinson-hyperlegible-italic - latin_latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */
+        url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'wg_handy_iconwghandyiconsvol2';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/originalwg_handy_icons_vol2.eot');
+  src: url('/assets/fonts/originalwg_handy_icons_vol2.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/originalwg_handy_icons_vol2.woff2') format('woff2'),
+       url('/assets/fonts/originalwg_handy_icons_vol2.woff') format('woff'),
+       url('/assets/fonts/originalwg_handy_icons_vol2.ttf') format('truetype'),
+       url('/assets/fonts/originalwg_handy_icons_vol2.svg#wg_handy_iconwghandyiconsvol2') format('svg');
+}
+
+@font-face {
+  font-family: 'Mochiy Pop One';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('/assets/fonts/mochiy-pop-one-v9-japanese_latin-regular.svg#MochiyPopOne') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'bohemian_soulregular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/bohemian_soul.eot');
+  src: url('/assets/fonts/bohemian_soul.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/bohemian_soul.woff2') format('woff2'),
+       url('/assets/fonts/bohemian_soul.woff') format('woff'),
+       url('/assets/fonts/bohemian_soul.ttf') format('truetype'),
+       url('/assets/fonts/bohemian_soul.svg#bohemian_soulregular') format('svg');
+}
+
+
+@font-face {
+  font-family: 'soopafreshregular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/assets/fonts/soopafre.eot');
+  src: url('/assets/fonts/soopafre.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/soopafre.woff2') format('woff2'),
+       url('/assets/fonts/soopafre.woff') format('woff'),
+       url('/assets/fonts/soopafre.ttf') format('truetype'),
+       url('/assets/fonts/soopafre.svg#soopafreshregular') format('svg');
+}

@@ -3,7 +3,7 @@ function themeSwitch(style) {
       style = localStorage.getItem("theme");
       if (style == null)
           style = "base";
-  document.querySelector("link[type='text/css']").setAttribute("href", "/public/assets/css/themes/" + style + ".css");
+  document.querySelector("link[type='text/css']").setAttribute("href", "/assets/css/themes/" + style + ".css");
   localStorage.setItem("theme", style);
 }
 

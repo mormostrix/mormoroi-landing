@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/public/guestbook/comment.css'; // Define the path for the stylesheet (ie. /styles/commentwidget.css)
+const s_stylePath = '/guestbook/comment.css'; // Define the path for the stylesheet (ie. /styles/commentwidget.css)
 const s_formId = '1FAIpQLSe_ApUerIMN0CpaMj-hCKET6pJJTrRIQWR6-yksuUqBJH8Jzw'; // The Google Form
 const s_nameId = '1995468964'; // The Name field ID
 const s_websiteId = '47161548'; // The Website field ID
