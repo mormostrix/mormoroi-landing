@@ -1,0 +1,30 @@
+:root{
+	--rgbg: rgba(255, 253, 252, 1);
+}
+
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip {
+	/* basic */
+	max-width: 18rem;
+	z-index: 9999;
+	margin: 24px 14px 7px 12px;
+
+	/* style and design */
+	padding: .5rem;
+	background: var(--bg);
+
+	/* fallback if rgba not supported */
+	border-radius: 0.625rem;
+	background: var(--rgbg);
+	box-shadow: 2px 2px 0 var(--med),-1px -1px 0 var(--rgbg);
+
+	-moz-border-radius: 0.625rem;
+	-webkit-border-radius: 0.625rem;
+	-moz-box-shadow: 3px 3px 0 var(--med),-1px -1px 0 var(--rgbg);
+	-webkit-box-shadow: 2px 2px 0 var(--med),-1px -1px 0 var(--rgbg);
+
+	/* font */
+	font-size: .7rem;
+	line-height: 1rem;
+	color: var(--dark);
+}

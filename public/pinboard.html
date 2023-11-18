@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+
+    <title>welcome to mormoroi</title>
+    <link rel="icon" type="image/ico" href="/public/assets/imgs/favicons/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/fonts.css">
+    <link rel="stylesheet" href="/public/assets/css/stylemytooltips.css">
+  </head>
+
+  <style>
+    :root {
+      --text: #262b3b!important;
+      --bg: #edf4ff!important;
+      --accent: #a3e635!important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #fffbd1!important;
+        --bg: #933513!important;
+        --accent: #c62b69!important;
+      }
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: none;
+      color: black!important;
+      font-size: calc(12px + 0.390625vw);
+      overflow: hidden;
+    }
+
+    main {
+      background-image: url(/public/assets/imgs/pinboard/cork.png);
+      border: 15px solid black;
+      border-radius: .15rem;
+      margin: 2% auto;
+      max-width: 900px;
+      min-height: 500px!important;
+    }
+
+    #boardmain {
+      height: 750px;
+      margin: 0 auto;
+      overflow: auto;
+      position: relative;
+    }
+
+    #note1 {
+      position: absolute;
+      background-image: url(/public/assets/imgs/pinboard/scrap.PNG);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: drop-shadow(3px 3px 2px black);
+      height: 300px;
+      width: 300px;
+      top: 2%;
+      left: 2%;
+    }
+    #note1 > .notes {
+      height: 230px;
+      width: 230px;
+      margin-top: 39px;
+      margin-left: 52px;
+      overflow-y: scroll;
+    }
+    #note2 {
+      position: absolute;
+      background-image: url(/public/assets/imgs/pinboard/scrap2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: drop-shadow(3px 3px 2px black);
+      height: 358px;
+      width: 350px;
+      top: 60%;
+      left: 2%;
+    }
+    #note2 > .notes {
+      height: 255px;
+      width: 249px;
+      margin-top: 50px;
+      margin-left: 62px;
+      overflow-y: scroll;
+    }
+    #note3 {
+      position: absolute;
+      background-image: url(/public/assets/imgs/pinboard/scrap4.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      filter: drop-shadow(3px 3px 2px black);
+      height: 300px;
+      width: 300px;
+      bottom: 10%;
+      left: 60%;
+      transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+    }
+    #note3 > .notes {
+      height: 169px;
+      width: 244px;
+      margin-top: 26px;
+      margin-left: 36px;
+      overflow-y: scroll;
+    }
+    #note4 {
+      position: absolute;
+      background-image: url(/public/assets/imgs/pinboard/scrap5.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: drop-shadow(3px 3px 2px black);
+      left: 45%;
+      top: 3%;
+      transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+      -webkit-transform: rotate(2deg);
+    }
+    #note4 > .notes {
+      height: 230px;
+      width: 230px;
+      margin-top: 39px;
+      margin-left: 52px;
+      overflow-y: scroll;
+    }
+    #note5 {
+      position: absolute;
+      background-image: url(/public/assets/imgs/pinboard/scrap6.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      filter: drop-shadow(3px 3px 2px black);
+      width: 460px;
+      bottom: -34%;
+      right: 23%;
+      transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+    }
+    #note5 > .notes {
+      height: 230px;
+      width: 388px;
+      margin-top: 39px;
+      margin-left: 52px;
+      overflow-y: scroll;
+      transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      -webkit-transform: rotate(3deg);
+    }
+
+    @media screen and (max-width: 690px) {
+      main {
+      margin: 0 auto;
+    }
+      #boardmain {
+        display: block;
+      }
+    }
+  </style>
+
+  <body>
+
+    <main>
+    <h1>pinboard</h1>
+      <div id="boardmain">
+
+        <div id="note1">
+          <div class="notes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div id="note2">
+          <div class="notes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div id="note3">
+          <div class="notes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div id="note4">
+          <div class="notes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div id="note5">
+          <div class="notes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- SMT -->
+    <script src="/public/assets/js/stylemytooltips.js"></script>
+    <script>
+        (function($){ $(document).ready(function(){ $("[title]").style_my_tooltips(); }); })(jQuery);
+    </script>
+
+  </body>
+
+</html>

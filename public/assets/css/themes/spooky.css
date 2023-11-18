@@ -1,0 +1,11 @@
+:root {
+  --text: #fff4b8;
+  --bg: #17152e;
+  --light: #ff8b40;
+  --med: #a22fc9;
+  --dark: #290143;
+  --accent: #55ffff;
+
+  --bgimg: url(/public/assets/imgs/pixels/spookyrunner.png) left 15px repeat-y fixed, url(/public/assets/imgs/spooky.jpg) 40% repeat fixed var(--bg);
+  --iconfilter: brightness(0) saturate(100%) invert(95%) sepia(10%) saturate(1586%) hue-rotate(323deg) brightness(108%) contrast(103%);
+}

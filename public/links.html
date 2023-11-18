@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+
+    <title>welcome to mormoroi</title>
+    <link rel="icon" type="image/ico" href="/public/assets/imgs/favicons/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/themes/sun.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/fonts.css">
+    <link rel="stylesheet" href="/public/assets/css/stylemytooltips.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <style>
+    article h2 {
+      padding-bottom: 1rem;
+    }
+    .imgs a img {
+      width: 88px!important;
+      height: 31px;
+    }
+    .imgs a img:hover {
+      border-radius: 8px;
+      transition: .2s;
+      outline: 2px solid var(--text);
+    }
+    .tab {
+      margin-top: 1rem;
+    }
+  </style>
+
+  <body>
+
+    <div id="corner">
+      <a href="#top">
+      <img src="/public/assets/imgs/pagedoll.png" alt="">
+      </a>
+    </div>
+
+    <div class="flex">
+
+      <!-- mobile navigation -->
+      <details id="burger" style="z-index: 9999;">
+        <summary id="toggle"></summary>
+          <aside id="burger-menu" class="menu right">
+            <div id="navbar">
+              <div class="navigation">
+                <div id="navimg">
+                  <img src="/public/assets/imgs/me.png" id="navme" title="go home">
+                  <img src="/public/assets/imgs/mushroom2.png" id="navcreate" title="go to what is created">
+                  <img src="/public/assets/imgs/header.png" id="navyou" title="go to what is for you">
+                </div>
+
+                <nav class="nav">
+                  <div id="nav">
+                    <div class="navcontent navme navall">
+                      <a href="/public/index.html">home</a>
+                      <h4>me,</h4>
+                      <a href="/public/about.html">about</a>
+                      <a href="/public/thoughts.html">thoughts</a>
+                      <a href="/public/log.html">media log</a>
+                      <a href="/public/journal/index.html">journal</a>
+                      <img src="/public/assets/imgs/me.png">
+
+                    </div>
+
+                    <div class="navcontent navcreate navall">
+                      <h4>creative,</h4>
+                      <a href="/public/projects/stories.html">stories</a>
+                      <a href="/public/projects/gallery.html">art</a>
+                      <a href="/public/projects/oc/index.html">oc hub</a>
+                      <h4>shrines,</h4>
+                      <a href="/public/shrines/index.html">shrine home</a>
+                      <img src="">
+                    </div>
+
+                    <div class="navcontent navyou navall">
+                      <h4>you,</h4>
+                      <a href="/public/guestbook/index.html">guestbook</a>
+                      <a href="/public/links.html">links</a>
+                      <h4>other,</h4>
+                      <a href="/public/sitemap.html">sitemap</a>
+                      <a href="/public/styleguide.html">styleguide</a>
+                      <img src="">
+                    </div>
+                  </div>
+                </nav>
+              </div>
+
+              <div class="nav">
+                <h4>Themes</h4>
+                <div class="theme-switches" id="themeswitcher">
+                  <a onclick="themeSwitch('sun')" class="switch"><img src="/public/assets/imgs/sun.webp" alt="sun emoji"></a>
+                  <a onclick="themeSwitch('moon')" class="switch"><img src="/public/assets/imgs/moon.webp" alt="moon emoji"></a>
+                  <a onclick="themeSwitch('spooky')" class="switch"><img src="/public/assets/imgs/spooky.webp" alt="web emoji"></a>
+                  <a onclick="themeSwitch('cold')" class="switch"><img src="/public/assets/imgs/cold.webp" alt="snowflake emoji"></a>
+                </div>
+              </div>
+            </div>
+          </aside>
+      </details>
+
+      <!-- navigation -->
+      <aside id="right" class="right">
+        <div id="navbar">
+          <div class="navigation">
+            <div id="navimg">
+              <img src="/public/assets/imgs/me.png" id="navme" title="go home">
+              <img src="/public/assets/imgs/mushroom2.png" id="navcreate" title="go to what is created">
+              <img src="/public/assets/imgs/header.png" id="navyou" title="go to what is for you">
+            </div>
+
+            <nav class="nav">
+              <div id="nav">
+                <div class="navcontent navme navall">
+                  <a href="/public/index.html">home</a>
+                  <h4>me,</h4>
+                  <a href="/public/about.html">about</a>
+                  <a href="/public/thoughts.html">thoughts</a>
+                  <a href="/public/log.html">media log</a>
+                  <a href="/public/journal/index.html">journal</a>
+                  <img src="/public/assets/imgs/me.png">
+
+                </div>
+
+                <div class="navcontent navcreate navall">
+                  <h4>creative,</h4>
+                  <a href="/public/projects/stories.html">stories</a>
+                  <a href="/public/projects/gallery.html">art</a>
+                  <a href="/public/projects/oc/index.html">oc hub</a>
+                  <h4>shrines,</h4>
+                  <a href="/public/shrines/index.html">shrine home</a>
+                  <img src="">
+                </div>
+
+                <div class="navcontent navyou navall">
+                  <h4>you,</h4>
+                  <a href="/public/guestbook/index.html">guestbook</a>
+                  <a href="/public/links.html">links</a>
+                  <h4>other,</h4>
+                  <a href="/public/sitemap.html">sitemap</a>
+                  <a href="/public/styleguide.html">styleguide</a>
+                  <img src="">
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="nav">
+            <h4>Themes</h4>
+            <div class="theme-switches" id="themeswitcher">
+              <a onclick="themeSwitch('sun')" class="switch"><img src="/public/assets/imgs/sun.webp" alt="sun emoji"></a>
+              <a onclick="themeSwitch('moon')" class="switch"><img src="/public/assets/imgs/moon.webp" alt="moon emoji"></a>
+              <a onclick="themeSwitch('spooky')" class="switch"><img src="/public/assets/imgs/spooky.webp" alt="web emoji"></a>
+              <a onclick="themeSwitch('cold')" class="switch"><img src="/public/assets/imgs/cold.webp" alt="snowflake emoji"></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main id="wrapper">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'neighbours')" id="defaultOpen">Indieweb Neighbourhood</button>
+          <button class="tablinks" onclick="openTab(event, 'bookmarks')">Bookmarks & Cool Things</button>
+          <button class="tablinks" onclick="openTab(event, 'credits')">Site Credits</button>
+        </div>
+
+        <article id="neighbours" class="tabcontent" style="display: block;">
+          <h2>NEIGHBOURS AROUND THE INDIEWEB</h2>
+
+            <div class="imgs" style="text-align: center;">
+              <a href="http://www.rice-boy.com/vattu/index.php"><img src="/public/assets/imgs/buttons/vattu.png" alt="vattu webcomic" title="vattu webcomic"></a>
+
+              <a href="https://toverachronicles.com/"><img src="/public/assets/imgs/buttons/tovera.png" alt="tovera chronicles visual novel" title="tovera chronicles: little guild on the hill"></a>
+
+              <a href="https://unchallenged-sky.neocities.org/"><img src="/public/assets/imgs/buttons/qiao.jpg" alt="unchallenged sky webnovel" title="unchallenged sky: the rise and fall of the glorious qiao"></a>
+
+              <a href="https://princessmurdersthehero.com/"><img src="/public/assets/imgs/buttons/pmth.jpg" alt="princess murders the hero webnovel" title="princess murders the hero"></a>
+
+              <a href="https://pleurodelinae.neocities.org"><img src="/public/assets/imgs/buttons/pleurodelinae.png" alt="pleurodelinae" title="pleurodelinae"></a>
+
+              <a href="https://nohappynonsense.net/"><img src="/public/assets/imgs/buttons/nonsense.jpg" alt="no happy nonsense" title="no happy nonsense"></a>
+
+              <a href="https://jasm1nii.xyz/"><img src="/public/assets/imgs/buttons/jasminesjournal.png" alt="jasmine's journal" title="jasmine's journal"></a>
+
+              <a href="https://mincerafter42.github.io/"><img src="/public/assets/imgs/buttons/viviatrix.png" alt="viatrix" title="viatrix."></a>
+
+              <a href="https://mycorrhiza.space"><img src="/public/assets/imgs/buttons/mycorrhiza.png" alt="mycorrhiza" title="mycorrhiza"></a>
+
+              <a href="https://snail-legs.co.uk"><img src="/public/assets/imgs/buttons/snaillegs.png" alt="snail legs" title="snail-legs"></a>
+
+              <a href="https://melankorin.net"><img src="/public/assets/imgs/buttons/melankorin.gif" alt="melankorin" title="melankorin" media="(prefers-reduced-motion: no-preference)"></a>
+
+              <a href="https://bulltown.2022.joejenett.com/"><img src="/public/assets/imgs/buttons/b22button.png" alt="bulltown 2022" title="joe jenette's bulltown"></a>
+            </div>
+        </article>
+
+        <article id="bookmarks" class="tabcontent" style="display: block;">
+          <h2>BOOKMARKS</h2>
+
+            <h3 style="background-color: var(--text); color: var(--bg)">fun stuff, cool stuff!</h3>
+              <ul>
+                <li><a href="https://warmly.bond/"><b>Warmly</b></a> - a "newsletter"" to connect with penpals and find friends of romantic partners</li>
+                <li><a href="https://rezuaq.be/new-area/image-creator/"><b>Fromsoft Image Maker</b></a> - tool to create the cool overlay effect found in fromsoft games</li>
+                <li><a href="https://steamunlocked.net/"><b>Steam Unlocked</b></a> - iykyk ;)</li>
+                <li><a href="https://space.galaxybuster.net/go.php"><b>Space Email</b></a> - send letters into the ether and read meesage sent many years ago</li>
+              </ul>
+            <h3 style="background-color: var(--text); color: var(--bg)">for later</h3>
+              <ul>
+                <li><a href="https://marathons.minty.nu/"><b>Ainna's Layout Marathons</b></a> - archive of ainna's previous layout marathons</li>
+                <li><a href="https://ajroach42.com/the-small-things-manifesto/"><b>Small Things Manifesto</b></a> - a manifesto of small things and advocacy for the slow web</li>
+                <li><a href="https://www.dragonlordsnet.com/qonews.htm"><b>Dragonlordsnet Newsletter Archive</b></a> - what is says on the time, an archive of submitted newsletters since 1988, for later reading</li>
+                <li><a href="https://docs.google.com/document/u/0/d/1MyvBBSHH2oEPElHCB76V93CH-ive-3N8luA0t8Vw9gk/mobilebasic"><b>Very Distant Lands</b></a> - an apparentl very well written retrosepctive meta of the adventure time series and its meanings</li>
+              </ul>
+            <h3 style="background-color: var(--text); color: var(--bg)">graphics & visuals</h3>
+              <ul>
+                <li><a href="https://pixels.crd.co/#pixels"><b>Pixels Carrd</b></a> - extensive pixel resource carrd</li>
+                <li><a href="https://xyz.crd.co/"><b>XYZ</b></a> - extensive pixel & graphics resource carrd</li>
+                <li><a href="https://pixelsafari.neocities.org/buttons/"><b>Pixel Safari Buttons</b></a> - pixel safari's button collection</li>
+                <li><a href="https://blinkies.cafe/"><b>Blinkies.Cafe</b></a> - blinkie collection and maker</li>
+                <li><a href="https://cyberneticdryad.neocities.org/graphics/mythology"><b>Cyberneticdryad</b></a> - cyberneticdryad's mythological graphics page, for later</li>
+                <li><a href="https://tentacrafts.neocities.org/"><b>Tentacrafts Stickers</b></a> - very large collection of transparent pngs and assorted stickers</li>
+              </ul>
+            <h3 style="background-color: var(--text); color: var(--bg)">webdev</h3>
+              <ul>
+                <li><a href="https://solaria.neocities.org/accessibility"><b>Solaria's Guide to Accessibility</b></a> - an incredibly simple & in-depth guide to understanding accessibility</li>
+                <li><a href="https://localghost.dev/blog/the-right-tag-for-the-job-why-you-should-use-semantic-html/"><b>Semantic HTML</b></a> - tutorial/guide for converting a webpage to use semantic html</li>
+                <li><a href="https://tessisamess.insanejournal.com/"><b>Tessisamess</b></a> - themes & templates made primarily for insanejournal, but can be used anywhere html allows</li>
+                <li><a href="https://jigsaw.w3.org/css-validator/"><b>CSS Validation</b></a> - W3C's css validator service</li>
+                <li><a href="https://validator.w3.org/#validate_by_uri+with_options"><b>Markup Validation</b></a> - W3C's markup (markdown and html) validation service</li>
+                <li><a href="https://htmlcheatsheet.com/"><b>Webcode.tools</b></a> - a website with cheatsheets for html, css, and js elements</li>
+                <li><a href="https://webcode.tools/generators/html"><b>HTML Cheatsheet</b></a> - a bunch of essential generators for webdev elements</li>
+                <li><a href="https://htmldog.com/guides/html/"><b>HTML Dog</b></a> - basic tutorials for simple html, beginner friendly</li>
+                <li><a href="https://rssguide.neocities.org/"><b>Neocities RSS Guide</b></a> - simple guide to make a custom rss feed for neocities</li>
+                <li><a href="https://tinytools.directory/"><b>Tiny Tools Directory</b></a> - a massive directory of various small and open source tools</li>
+                <li><a href="https://bennettfeely.com/clippy/"><b>Clip Path Maker</b></a> - tool for making cool shapes to use around css images and boxes</li>
+                <li><a href="https://unicodeplus.com/"><b>Unicode Directory</b></a> - reference site for unicode symbols, emojis, and icons</li>
+                <li><a href="https://gwfh.mranftl.com/fonts"><b>Google Webfont Helper</b></a> - a resource to replace using google's font directory</li>
+                <li><a href="https://imageoptim.com/online"><b>ImageOptim</b></a> -  	online image optimizer to decrease file sizes</li>
+                <li><a href="https://cssgradient.io/"><b>CSS Gradient</b></a> - generate css gradients easily without having to undergo trial and error</li>
+                <li><a href="https://www.fontsquirrel.com/tools/webfont-generator"><b>Font Squirrel Webfont Maker</b></a> - a tool to turn your favourite fonts into webfonts for self hosting</li>
+                <li><a href="https://transfonter.org/"><b>Transfonter</b></a> - alternate tool to create and self-host custom webfonts</li>
+                <li><a href="https://fontdrop.info/"><b>Fontdrop</b></a> - tool for viewing what's inside fonts and comparing different typefaces</li>
+                <li><a href="http://howtocenterincss.com/"><b>How To Center In CSS</b></a> - what it says on the tin</li>
+                <li><a href="https://www.quackit.com/html/codes/"><b>Quackit</b></a> - yet another html and css reference guide with assorted tutorials</li>
+                <li><a href="https://doodlenerd.com/css-element/speech-bubble-generator"><b>Speech Bubble Generator</b></a> - tool to easily create css-only speech bubbles</li>
+                <li><a href="http://www.responsinator.com/"><b>Responsinator</b></a> - site for checking out how your site looks on difference devices</li>
+                <li><a href="https://owumaro.github.io/text-stroke-generator/"><b>Text Stroke Generator</b></a> - for getting that perfect stroke around text since css is hard</li>
+                <li><a href="https://app.dithermark.com/"><b>Dithermaker</b></a> - one of many dithering tools, useful for creating decker-style images</li>
+                <li><a href="https://doodad.dev/dither-me-this/"><b>Dither Me This</b></a> - alternate dithering tool that seems easier to use, with a more eye-pleasing design</li>
+                <li><a href="http://www.yourfonts.com/"><b>Your Fonts</b></a> - free handwritten font maker alternative to calligraphr</li>
+                <li><a href="https://metatags.io/"><b>Meta Tags</b></a> - site to generate meta tags for your site</li>
+                <li><a href="https://tiny-helpers.dev/latest"><b>Tiny Helpers</b></a> - similar to tiny tools but with lots more resources for developers</li>
+                <li><a href="https://www.image-map.net/"><b>Image Map</b></a> - quick-n-easy image map maker</li>
+                <li><a href="https://sharkcoder.com/visual/borders"><b>Shark Coder</b></a> - yet another reference site with useful css tricks and tips</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Border-image_generator"><b>Border Image Generator</b></a> - MDN web docs border generator tool</li>
+                <li><a href="https://accessiblecolor.design/"><b>Accessible Color</b></a> - tool to anaylse and create more accessible patterns (used for this site)</li>
+                <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"><b>Free Code Camp</b></a> - amazing free resource to learn all kinds of web development and gain certificates from courses</li>
+                <li><a href="https://bechnokid.neocities.org/resources/tut_freezeframe"><b>Bechnokid's Freezeframe.js</b></a> - accessible friendly freeze frame script to pause moving images that i just couldn't figure out how to work just yet</li>
+                <li><a href="https://www.transparenttextures.com/"><b>Transparent Textures</b></a> - tool that converts subtle patterns into and generates transparent textures for use</li>
+                <li><a href="https://sadgrl.online/webmastery/downloads/tiledbgs"><b>Tiled Backgrounds</b></a> - bunch of tiled/repeating backgrounds from sadgirl.online--the entire site is a useful resource</li>
+              </ul>
+            <h3 style="background-color: var(--text); color: var(--bg)">other</h3>
+              <ul>
+                <li><a href="https://filegarden.com/"><b>File Garden</b></a> - free small file hosting service</li>
+                <li><a href="https://catbox.moe/"><b>Catbox</b></a> - another free small file hosting service</li>
+                <li><a href="https://angblev.com/yoga/library/"><b>Angblev's Yoga Library</b></a> - hand drawn kriyas and yoga sets by angblev, good for beginners (i think)</li>
+              </ul>
+        </article>
+
+        <article id="credits" class="tabcontent" style="display: block;">
+          <h2>SITE CREDITS</h2>
+            <ul>
+              <li><a href="https://kalechips.net/">styleswitcher & accessible mobile hamburger menu</a> from kalechips</li>
+              <li><a href="https://lospec.com/palette-list/caramel-autumn">spooky theme palette</a></li>
+              <li><a href="https://xyz.crd.co/#medium">spooky theme headstones pixel runner</a></li>
+              <li><a href="https://lospec.com/palette-list/bloodink-and-paper">moon theme palette</a>
+                </li>
+              <li><a href="https://foollovers.com/mat/i-other17.html">moon theme planets pixel runner</a></li>
+              <li><a href="https://xyz.crd.co/#xl">sun theme background image</a></li>
+              <li><a href="https://craftpix.net/freebies/free-winter-backgrounds-pixel-art/">cold theme background image</a></li>
+              <li><a href="https://mutant.tech/">theme switcher icons & various other icons used on several pages</a></li>
+              <li><a href="https://hillhouse.neocities.org/snippets">various code snippets & site layout inspiration</a> from rosemary</li>
+              <li><a href="https://web.archive.org/web/20090830121424/http://geocities.com/chpl_school/bk.gif">guestbook gift</a></li>
+              <li><a href="https://virtualobserver.moe/ayano/comment-widget">guestbook comment box</a> from ayano</li>
+            </ul>
+        </article>
+
+        <footer>
+          <p style="text-align: right; padding-right: 1.25rem; padding-bottom: 1rem;">hosted on <a href="https://leprd.space/">leprd</a> | mormoroi @ 2023-now</p>
+        </footer>
+
+      </main>
+
+    </div>
+
+    <!-- Nav -->
+    <script src="/public/assets/js/nav.js"></script>
+    <!-- Tabs -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+    <!-- Themes -->
+    <script src="/public/assets/js/themeswitch.js"></script>
+    <!-- SMT -->
+    <script src="/public/assets/js/stylemytooltips.js"></script>
+    <script>
+        (function($){ $(document).ready(function(){ $("[title]").style_my_tooltips(); }); })(jQuery);
+    </script>
+
+  </body>
+
+</html>
