@@ -6,9 +6,9 @@
     <meta name="description" content="strix's website at mormoroi">
 
     <title>mormoroi</title>
-    <link rel="icon" type="image/ico" href="/public/assets/favicon.ico">
+    <link rel="icon" type="image/ico" href="/assets/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="/public/assets/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts.css">
   </head>
 
   <style>
@@ -18,8 +18,9 @@
       --light: #ffbc36;
       --med: #3b313c;
       --dark: #073467;
+      --accent: #ff55ff;
 
-      --bgimg: url(/public/assets/light.jpg) 40% repeat fixed var(--bg);
+      --bgimg: url(/assets/light.jpg) 40% repeat fixed var(--bg);
       --iconfilter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(7498%) hue-rotate(48deg) brightness(100%) contrast(96%);
     }
 
@@ -30,8 +31,9 @@
         --light: #d2ffc6;
         --med: #c23a3a;
         --dark: #030031;
+        --accent: #99db48;
 
-        --bgimg: url(/public/assets/dark.gif) 40% repeat fixed var(--bg);
+        --bgimg: url(/assets/dark.gif) 40% repeat fixed var(--bg);
         --iconfilter: brightness(0) saturate(100%) invert(99%) sepia(41%) saturate(74%) hue-rotate(298deg) brightness(98%) contrast(102%);
       }
     }
@@ -46,7 +48,7 @@
       padding: 0;
       margin: 0;
       transition: 0.4s ease;
-      cursor: url(/public/assets/cursor/normal.cur), auto !important;
+      cursor: url(/assets/cursor/normal.cur), auto !important;
     }
 
     body {
@@ -66,10 +68,12 @@
       margin: 50px auto 0 auto;
       border-radius: .25rem;
       background-color: var(--bg);
-      border-image: url(/public/assets/lace.png) 6 fill repeat;
+      border-image: url(/assets/lace.png) 6 fill repeat;
       border-width: 6px;
       border-style: solid;
       border-image-outset: 1px;
+      outline: 2px dotted var(--accent);
+      outline-offset: -1rem;
     }
 
     h1 {
@@ -112,7 +116,7 @@
 
     a:hover, a img:hover {
       color: var(--med);
-      cursor: url(/public/assets/cursor/link.cur),pointer !important;
+      cursor: url(/assets/cursor/link.cur),pointer !important;
     }
 
     hr {
@@ -128,7 +132,7 @@
 
     <main class="splash">
       <h1>welcome to</h1>
-      <span class="title">mormoroi<img src="/public/assets/icon.png" class="spin" alt="spiralling icon"></span>
+      <span class="title">mormoroi<img src="/assets/icon.png" class="spin" alt="spiralling icon"></span>
       <p><b><a href="https://mormoroi.com">come on in!</a></b></p>
       <hr>
       <small style="font-style: italic">(this website is hosted on <a href="https://leprd.space">leprd</a>)</small>
