@@ -1,1 +1,3 @@
-$(document).ready(function(){$("#navbar").load("/nav.html");});
+$(function(){
+  $("#navbar").load("https://mormoroi.com/nav.html");
+});
