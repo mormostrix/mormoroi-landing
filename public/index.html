@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="strix's website at mormoroi">
+
+    <title>mormoroi</title>
+    <link rel="icon" type="image/ico" href="/public/assets/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/public/assets/fonts.css">
+  </head>
+
+  <style>
+    :root {
+      --text: #050505;
+      --bg: #ffeebb;
+      --light: #ffbc36;
+      --med: #3b313c;
+      --dark: #073467;
+
+      --bgimg: url(/public/assets/light.jpg) 40% repeat fixed var(--bg);
+      --iconfilter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(7498%) hue-rotate(48deg) brightness(100%) contrast(96%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #FCFAF9;
+        --bg: #0A0F0D;
+        --light: #d2ffc6;
+        --med: #c23a3a;
+        --dark: #030031;
+
+        --bgimg: url(/public/assets/dark.gif) 40% repeat fixed var(--bg);
+        --iconfilter: brightness(0) saturate(100%) invert(99%) sepia(41%) saturate(74%) hue-rotate(298deg) brightness(98%) contrast(102%);
+      }
+    }
+
+    /* text highlight */
+    ::-moz-selection, ::selection  {
+      color: var(--bg);
+      background: var(--text);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      transition: 0.4s ease;
+      cursor: url(/public/assets/cursor/normal.cur), auto !important;
+    }
+
+    body {
+      color: var(--text);
+      line-height: 1.5;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: calc(1.2rem + 0.390625vw);
+      background: var(--bgimg);
+    }
+
+    .splash {
+      background-color: var(--bg);
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 45px 30px;
+      max-width: 38rem;
+      margin: 50px auto 0 auto;
+      border-radius: .25rem;
+      background-color: var(--bg);
+      border-image: url(/public/assets/lace.png) 6 fill repeat;
+      border-width: 6px;
+      border-style: solid;
+      border-image-outset: 1px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .title {
+      font-family: 'soopafreshregular', sans-serif;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: 1rem 0 .5rem 0;
+    }
+
+    .spin {
+      filter: var(--iconfilter);
+      width: 2.5rem;
+      vertical-align: middle;
+      -webkit-animation: spin 1.6s linear infinite normal both;
+      -moz-animation: spin 1.6s linear infinite normal both;
+      -o-animation: spin 1.6s linear infinite normal both;
+      animation: spin 1.6s linear infinite normal both;
+      transform-origin: center;
+    }
+    @keyframes spin  {
+      0%  {
+        transform: rotate(0);
+      }
+      100%  {
+        transform: rotate(360deg);
+      }
+    }
+
+    a, a:visited {
+      color: var(--light);
+      text-decoration: none;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:hover, a img:hover {
+      color: var(--med);
+      cursor: url(/public/assets/cursor/link.cur),pointer !important;
+    }
+
+    hr {
+      width: 40%;
+      margin: 10px auto;
+      background-color: transparent;
+      border-top: 2px dotted var(--text);
+    }
+
+  </style>
+
+  <body>
+
+    <main class="splash">
+      <h1>welcome to</h1>
+      <span class="title">mormoroi<img src="/public/assets/icon.png" class="spin" alt="spiralling icon"></span>
+      <p><b><a href="https://mormoroi.com">come on in!</a></b></p>
+      <hr>
+      <small style="font-style: italic">(this website is hosted on <a href="https://leprd.space">leprd</a>)</small>
+    </main>
+
+  </body>
+</html>
