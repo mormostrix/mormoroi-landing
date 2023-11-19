@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+
+    <title>welcome to mormoroi</title>
+    <link rel="icon" type="image/ico" href="/assets/imgs/favicons/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/themes/sun.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/stylemytooltips.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+
+    <div id="corner">
+      <a href="#top">
+      <img src="/assets/imgs/pagedoll.png" alt="">
+      </a>
+    </div>
+
+    <div class="flex">
+
+      <!-- mobile navigation -->
+      <details id="burger" style="z-index: 9999;">
+        <summary id="toggle"></summary>
+          <aside id="burger-menu" class="menu right">
+            <div id="navbar"></div>
+          </aside>
+      </details>
+
+      <!-- navigation -->
+      <aside id="right" class="right">
+        <div id="navbar"></div>
+      </aside>
+
+      <main id="wrapper">
+
+        <header>
+          <h1 id="top">testing zone,</h1>
+        </header>
+
+      </main>
+
+    </div>
+
+    <!-- Nav -->
+    <script src="/assets/js/nav.js"></script>
+    <!-- Themes -->
+    <script src="/assets/js/themeswitch.js"></script>
+    <!-- SMT -->
+    <script src="/assets/js/stylemytooltips.js"></script>
+    <script>
+        (function($){ $(document).ready(function(){ $("[title]").style_my_tooltips(); }); })(jQuery);
+    </script>
+    <!-- Autoload -->
+    <script src="/assets/js/load.js" charset="utf-8"></script>
+  </body>
+
+</html>

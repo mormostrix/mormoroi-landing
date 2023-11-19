@@ -112,7 +112,13 @@ main {
   }
 }
 
-/* sidebar */
+#navbar {
+  overflow-y: scroll;
+  display: contents;
+}
+
+details#navbar /* for details navi */
+
 .right {
 	display: flex;
   flex-direction: column;
