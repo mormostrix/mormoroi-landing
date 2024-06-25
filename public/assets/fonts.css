@@ -3,12 +3,12 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 400;
-  src: url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
-  src: url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
-       url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
+  src: url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-regular.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
 }
 
 /* atkinson-hyperlegible-italic - latin_latin-ext */
@@ -16,31 +16,31 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: italic;
   font-weight: 400;
-  src: url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot'); /* IE9 Compat Modes */
-  src: url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */
-        url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('/Mormoroi.Landing/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
+  src: url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot'); /* IE9 Compat Modes */
+  src: url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.woff') format('woff'), /* Modern Browsers */
+        url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/Mormoroi.Landing/public/assets/fonts/atkinson-hyperlegible-v10-latin_latin-ext-italic.svg#AtkinsonHyperlegible') format('svg'); /* Legacy iOS */
 }
 
 /*basteleur*/
 @font-face {
   font-family: 'Basteleur';
-  src: url('/Mormoroi.Landing/assets/fonts/basteleur.eot');
-  src: url('/Mormoroi.Landing/assets/fonts/basteleur.woff2') format('woff2'),
-      url('/Mormoroi.Landing/assets/fonts/basteleur.woff') format('woff'),
-      url('/Mormoroi.Landing/assets/fonts/basteleur.ttf') format('truetype'),
-      url('/Mormoroi.Landing/assets/fonts/basteleur.svg#basteleurmoonlight') format('svg'),
-      url('/Mormoroi.Landing/assets/fonts/Basteleur.otf') format('opentype');
+  src: url('/Mormoroi.Landing/public/assets/fonts/basteleur.eot');
+  src: url('/Mormoroi.Landing/public/assets/fonts/basteleur.woff2') format('woff2'),
+      url('/Mormoroi.Landing/public/assets/fonts/basteleur.woff') format('woff'),
+      url('/Mormoroi.Landing/public/assets/fonts/basteleur.ttf') format('truetype'),
+      url('/Mormoroi.Landing/public/assets/fonts/basteleur.svg#basteleurmoonlight') format('svg'),
+      url('/Mormoroi.Landing/public/assets/fonts/Basteleur.otf') format('opentype');
 }
 
 /*femme fatale*/
 @font-face {
   font-family: 'Femme Fatale';
-  src: url('/Mormoroi.Landing/assets/fonts/skfemmefatale.eot');
-  src: url('/Mormoroi.Landing/assets/fonts/skfemmefatale.woff2') format('woff2'),
-      url('/Mormoroi.Landing/assets/fonts/skfemmefatale.woff') format('woff'),
-      url('/Mormoroi.Landing/assets/fonts/skfemmefatale.ttf') format('truetype'),
-      url('/Mormoroi.Landing/assets/fonts/skfemmefatale.svg#sk_femme_fataleregular') format('svg');
+  src: url('/Mormoroi.Landing/public/assets/fonts/skfemmefatale.eot');
+  src: url('/Mormoroi.Landing/public/assets/fonts/skfemmefatale.woff2') format('woff2'),
+      url('/Mormoroi.Landing/public/assets/fonts/skfemmefatale.woff') format('woff'),
+      url('/Mormoroi.Landing/public/assets/fonts/skfemmefatale.ttf') format('truetype'),
+      url('/Mormoroi.Landing/public/assets/fonts/skfemmefatale.svg#sk_femme_fataleregular') format('svg');
 }
