@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the personal site or mormoroi dot com">
+
+    <title>mormoroi</title>
+    <link rel="icon" type="image/ico" href="/Mormoroi.Landing/assets/icon.png">
+    <link rel="stylesheet" type="text/css" href="/Mormoroi.Landing/assets/fonts.css">
+  </head>
+
+  <style>
+    :root{
+      --white: #fde8e5;
+      --light: #bb9d9d;
+      --med: #ba0000;
+      --dark: #290707;
+      --black: #16161d;
+      --font: 'Femme Fatale';
+      --text-deco: underline wavy 2px var(--white);
+      --bg: var(--light);
+      --splash: var(--dark);
+      --txt: var(--white);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --white: #fde8e5;
+        --light: #668fcc;
+        --med: #244ab3;
+        --dark: #141433;
+        --black: #16161d;
+        --font: 'Basteleur';
+        --text-deco: underline solid 1px var(--white);
+        --bg: var(--dark) url(/Mormoroi.Landing/assets/dots.png);
+        --splash: var(--light);
+        --txt: var(--black);
+      }
+    }
+    ::-moz-selection, ::selection {
+      color: var(--dark);
+      background: var(--light);
+    }
+    *{
+      padding: 0;
+      margin: 0;
+      transition: 0.4s ease;
+      cursor: url(/Mormoroi.Landing/assets/cursor/normal.cur), auto !important;
+    }
+    body{
+      color: var(--txt);
+      line-height: 1.5;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-size: calc(1.2rem + 0.390625vw);
+      background: var(--bg);
+    }
+    .splash{
+      background-color: var(--splash);
+      width: 22em;
+      font-size: .8em;
+      text-align: center;
+      padding: 45px 30px;
+      margin: 50px auto 0 auto;
+      border-radius: .25rem;
+      border: 3px solid var(--med);
+      outline: 2px dotted var(--med);
+      outline-offset: -.8rem;
+    }
+    h1{
+      font-size: 2rem;
+    }
+    span.title{
+      font-family: var(--font), sans-serif;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      text-align: center;
+      margin: 1rem 0 .5rem 0;
+      animation: float 9s infinite;
+    }
+    @keyframes float{
+      0% { transform:  translateY(2%); }
+      50% { transform:  translateY(-20%); }
+      100% { transform:  translateY(2%); }
+      }
+    p > a{
+      font-weight: bolder;
+      transition: all .3s ease-in-out;
+    }
+    p > a:hover{
+      letter-spacing: 2px;
+      transition: all .3s ease-in-out;
+    }
+    a, a:visited{
+      color: var(--med);
+      text-decoration: var(--text-deco);
+      text-underline-offset: 5px;
+      font-weight: bold;
+      font-style: italic;
+    }
+    a:hover, a img:hover{
+      text-decoration-color: var(--med);
+      color: var(--white);
+      cursor: url(/Mormoroi.Landing/assets/cursor/link.cur),pointer !important;
+    }
+    hr{
+      width: 40%;
+      margin: 10px auto;
+      background-color: transparent;
+      border-top: 2px dotted var(--dark);
+      border-bottom: none;
+    }
+    small{
+      font-style: italic;
+    }
+    .taped::before {
+      content:" ";
+      background-image:url(/Mormoroi.Landing/assets/startape.gif);
+      background-repeat:no-repeat;
+      display:block;
+      position:absolute;
+      height: 100px;
+      width: 150px;
+      background-size: contain;
+      top: 5px;
+      right: 34%;
+      transform: rotate(3deg);
+    }
+    .taped::after {
+      content:" ";
+      background-image:url(/Mormoroi.Landing/assets/startape.gif);
+      background-repeat:no-repeat;
+      display:block;
+      position:absolute;
+      height: 100px;
+      width: 150px;
+      background-size: contain;
+      left: 40%;
+      top: 360px;
+      transform: rotate(-5deg);
+    }
+    @media screen and (max-width:525px){
+      .splash{
+        width: 90%;
+        padding-left: 1%;
+        padding-right: 3%;
+      }
+      span.title{
+        font-size: 1.8rem;
+      }
+      small p{
+        padding: 0 1%;
+      }
+      .taped::after{
+        top: 335px;
+      }
+    }
+  </style>
+
+  <body>
+
+    <main class="splash taped">
+      <h1>Welcome to</h1>
+      <span class="title">mormoroi!</span>
+      <p><a href="https://mormoroi.com/">~ come on in ~</a></p>
+      <hr>
+      <small>
+        latest update: <b>version 2.0 | June 25</b>
+        <p>VERSION 2.0 IS HERE ft. 3 THEMES that change not only colours but LAYOUTS! pages in the process of being reuploaded, but, for now, enjoy <a href="https://mormoroi.com/_parts/mspaint.html">mspaint</a></p>
+      </small>
+    </main>
+
+  </body>
+</html>
